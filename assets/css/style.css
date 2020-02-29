@@ -65,10 +65,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-.text {
-    padding-right: 30px;
-    padding-left: 30px;
-}
 .main {
     display: block;
     margin: auto;
@@ -80,34 +76,38 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 60px;
     
 }
-.portfolio-img {
-    width: 350px;
-    height: 250px;
-    padding: 30px;
-    position: relative;
-}
-
 .portfolio-item {
     position: relative;
     float: left;
 }
-
 .portfolio-name {
     background: #4aaaa5;
     height: 20px;
-    width: 350px;
+    width: 433px;
     padding: 20px 0px;
-    margin: 30px;
+    margin: 180px 0px 0 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     font-size: 20px;
     text-align: center;
-    position: relative;
+    position: absolute;
+    float: left;
 }
+.portfolio-img {
+    width: 433px;
+    height: 250px;
+    margin: 30px 0px 0px 30px;
+    position: relative;
+    float: left;
+}
+
 .clearfix {
     content: "";
     clear: both;
     display: block;
+}
+#last {
+    margin-bottom: 30px;
 }
 #img-profile {
     width: 200px;
@@ -142,4 +142,62 @@ a:link, a:visited, a:hover, a:active {
     border-color: #cccccc;
     padding: 8px 20px 8px 20px;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        background-image: none;
+        background-color: burlywood;
+    }
+    h2 {
+        width: 650px;
+    }
+    .main {
+        width: 700px;
+    }
+    #container {
+        width: 700px;
+    }
+    #contact-info {
+        width: 650px;
+    }
+    #contact-name {
+        width: 650px;
+    }
+    #contact-email {
+        width: 650px;
+    }
+    #contact-message {
+        width: 650px;
+    }
+    #container {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-image: url(../images/qbkls.png);
+    }
+    h2 {
+        width: 480px;
+    }
+    .main {
+        width: 530px;
+    }
+    #container {
+        width: 530px;
+    }
+    #contact-info {
+        width: 530px;
+    }
+    #contact-name {
+        width: 480px;
+    }
+    #contact-email {
+        width: 480px;
+    }
+    #contact-message {
+        width: 480px;
+    }
 }
